@@ -1,5 +1,0 @@
-            - name: Angular Problem Matchers
-  # You may pin to the exact commit or the version.
-  # uses: EdricChan03/angular-problem-matchers-action@d1b39e0531755ba8b8b719e3b07384ebf513b446
-  uses: EdricChan03/angular-problem-matchers-action@v0.0.0
-          
