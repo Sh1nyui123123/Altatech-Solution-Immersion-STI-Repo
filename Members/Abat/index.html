@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0 50px;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+
+        /**** LEFT CONTAINER ****/
+        .left-container #form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .left-container #form  #desc{
+            resize: none;
+        }
+        
+        .left-container #msg {
+            color: red;
+        }
+
+        .left-container #form #btn{
+            background-color: white;
+            border-radius: 25px;
+            border-color: rgb(112, 112, 235);
+            border-style: solid;
+            border-width: 1px;
+            color: rgb(112, 112, 235);
+            width: 100px;
+            height: 36px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: 
+            background-color 0.5s ease,
+            color 0.5s ease,
+            opacity 0.5s ease;
+        }
+
+        .left-container #form #btn:hover{
+            background-color: rgb(112, 112, 235);
+            color: white;
+        }
+
+        /**** RIGHT CONTAINER ****/
+        .right-container #posts {
+            width: 400px;
+        }
+
+        .right-container #posts i {
+            cursor: pointer;
+        }
+
+        .right-container #posts .post {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .right-container #posts .title {
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        .right-container #posts .image {
+            max-width: 500px;
+        }
+
+        .right-container #posts .options {
+            display: flex;
+            gap: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left-container">
+            <h1>Create a Post</h1>
+            <form id="form">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter Title">
+                <br>
+                <label for="desc">Description</label>
+                <textarea id="desc" name="post" cols="30" rows="10" placeholder="Enter Description"></textarea>
+                <br>
+                <label for="img">Image</label>
+                <input type="text" id="image" placeholder="Enter image URL">
+                <div id="msg"></div>
+                <button id="btn" type="submit">Post</button>
+            </form>
+        </div>
+
+        <div class="right-container">
+            <h1>Your Posts</h1>
+
+            <div id="posts">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a9db9a42c4.js" crossorigin="anonymous"></script>
+</body>
+</html>
