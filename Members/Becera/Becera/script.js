@@ -1,26 +1,4 @@
 let posts = [];
-/* reference 
-https://stackoverflow.com/questions/45521466/i-cant-seem-to-get-my-code-to-work
-
-https://teamtreehouse.com/community/how-to-trim-a-users-input
-
-https://www.shecodes.io/athena/164401-what-is-the-trim-function-used-for-in-javascript
-
-https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
-
-https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript/14276615
-
-https://www.programiz.com/javascript/examples/generate-random-strings
-
-
-https://stackoverflow.com/questions/62055245/how-to-add-content-inside-array-using-foreach-to-innerhtml
-
-
-https://stackoverflow.com/questions/55439799/post-id-route-showing-up-in-other-components
-
-https://laracasts.com/discuss/channels/laravel/crud-edit-post-problem
-
-*/
 
 function createPost(){
   const postInput = document.getElementById('postInput');
